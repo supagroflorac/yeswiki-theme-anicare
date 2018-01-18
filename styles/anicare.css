@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+html {
+  border-left: white 5% solid;
+  border-right: white 5% solid; }
+
+body {
+  border-left: #008db2 30px solid;
+  color: #505050;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: auto; }
+
+h1 {
+  color: #06848b;
+  font-size: 45px;
+  font-weight: 600; }
+
+h2 {
+  color: #e2be3a;
+  font-size: 42px;
+  font-weight: 600; }
+
+h3 {
+  color: #008db2;
+  font-size: 40px;
+  font-weight: 600; }
+
+h4 {
+  color: #dc921b;
+  font-size: 37px;
+  font-weight: 600; }
+
+h5 {
+  color: #4b4869;
+  font-size: 32px;
+  font-weight: 700; }
+
+h5 {
+  color: #c6438c;
+  font-size: 22px; }
+
+#logo {
+  width: 120px;
+  margin: 20px; }
+
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
+
+footer {
+  background-color: #505050;
+  color: white;
+  font-size: 80%;
+  font-weight: normal; }
+  footer a {
+    color: white; }
+  footer a:hover {
+    color: white; }
+  footer ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end; }
+    footer ul li {
+      list-style: none;
+      margin-right: 1em; }
+
+nav {
+  margin-bottom: 15px; }
+  nav li:hover {
+    border-bottom: #06848b 4px solid; }
+
+#main {
+  padding: 1em;
+  flex: 2 0px; }
+
+/*# sourceMappingURL=anicare.css.map */
