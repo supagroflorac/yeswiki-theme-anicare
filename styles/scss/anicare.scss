@@ -1,88 +1,46 @@
-$mainBlue: #06848b;
-$mainYellow: #e2be3a;
-$mainPurple: #4b4869;
-$mainBlack: #505050;
-$secondBlue: #008db2;
-$secondOrange: #dc921b;
-$secondPurple: #50478b;
-$secondPink: #c6438c;
+@import 'vars';
+@import 'text';
 
-$bold: 700;
-$semiBold: 600;
-
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-html {
-  border-left: white 5% solid;
-  border-right: white 5% solid;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  border-left: $secondBlue 30px solid;
-  color: $mainBlack;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px;
-  font-weight: $bold;
-
-  display: flex;
-  flex-flow: column;
-  min-height: 100vh;
-
-  max-width: 1280px;
-  margin: auto;
-}
-
-h1 {
-  color: $mainBlue;
-  font-size: 45px;
-  font-weight: $semiBold;
-}
-
-h2 {
-  color: $mainYellow;
-  font-size: 42px;
-  font-weight: $semiBold;
-}
-
-h3 {
-  color: $secondBlue;
-  font-size: 40px;
-  font-weight: $semiBold;
-}
-
-h4 {
-  color: $secondOrange;
-  font-size: 37px;
-  font-weight: $semiBold;
-}
-
-h5 {
-  color: $mainPurple;
-  font-size: 32px;
-  font-weight: $bold;
-}
-
-h5 {
-  color: $secondPink;
-  font-size: 22px;
-}
-
-#logo {
-  width: 120px;
-  margin: 20px;
+min-height: 100vh;
 }
 
 header {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  background-color: $mainBlue;
+  min-height: $textMinHeight;
+
+  #logo {
+    height: 100%;
+    width: auto;
+  }
 }
 
+#main {
+  width: 100%;
+  div.page {
+    max-width: $textWidth;
+    margin: auto;
+    padding: 2em;
+  }
+}
+
+
 footer {
-  background-color: $mainBlack;
+  background-color: $mainBlue;
   color: white;
   font-size: 80%;
   font-weight: normal;
+  min-height: $textMinHeight;
+
   a {
     color: white;
   }
@@ -101,15 +59,7 @@ footer {
   }
 }
 
-nav {
-  margin-bottom: 15px;
 
-  li:hover {
-    border-bottom: $mainBlue 4px solid;
-  }
-}
 
-#main {
-  padding: 1em;
-  flex: 2 0px;
-}
+@import 'menu';
+@import 'mainPage';

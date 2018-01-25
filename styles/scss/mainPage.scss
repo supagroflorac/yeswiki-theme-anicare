@@ -1,0 +1,22 @@
+#main.mainPage {
+  display: flex;
+  flex: row nowrap;
+  justify-content: center;
+  align-content: center;
+
+  background: url('../images/bandeau.jpeg') no-repeat;
+  vertical-align: middle;
+  height: $textMinHeight;
+  div.page {
+    color: white;
+    text-align: center;
+    min-height: 0;
+    max-width: $textWidth;
+  }
+}
+
+#entry, #partners {
+  max-width: $textWidth;
+  min-height: $textMinHeight;
+  padding: 2em;
+}

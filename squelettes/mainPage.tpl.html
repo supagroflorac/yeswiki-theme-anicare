@@ -14,19 +14,30 @@
     </a>
     <nav role='navigation'>
       <div id="menuToggle">
-        <input type="checkbox" />
+        <input type="checkbox">
 
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
 
         {{include page="PageMenuHaut" doubleclic="1"}}
       </div>
+
     </nav>
   </header>
 
-  <section id="main" role="main" {{doubleclic}}>
-      {WIKINI_PAGE}
+  <section>
+    <article id="main" class="mainPage" role="main" {{doubleclic}}>
+        {WIKINI_PAGE}
+    </article>
+
+    <article id="entry">
+      {{include page="entry" doubleclic="1"}}
+    </article>
+
+    <article id="partners">
+      {{include page="Partners" doubleclic="1"}}
+    </article>
   </section>
 
   <footer>
