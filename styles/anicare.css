@@ -59,7 +59,7 @@ header {
   flex-flow: row;
   justify-content: space-between;
   background-color: #06848b;
-  min-height: 15em; }
+  min-height: 20em; }
   header #logo {
     height: 100%;
     width: auto; }
@@ -76,7 +76,8 @@ footer {
   color: white;
   font-size: 80%;
   font-weight: normal;
-  min-height: 15em; }
+  min-height: 20em;
+  padding: 2em; }
   footer a {
     color: white; }
   footer a:hover {
@@ -84,7 +85,8 @@ footer {
   footer ul {
     display: flex;
     flex-flow: row;
-    justify-content: flex-end; }
+    justify-content: center;
+    align-items: center; }
     footer ul li {
       list-style: none;
       margin-right: 1em; }
@@ -162,9 +164,10 @@ footer {
         color: white;
         text-decoration: none; }
       #menuToggle div.include ul a:hover {
-        color: #e2be3a; }
+        color: #06848b;
+        background: white; }
 
-@media (min-width: 1024px) {
+@media (min-width: 640px) {
   #menuToggle {
     position: inherit; }
     #menuToggle span {
@@ -181,22 +184,109 @@ footer {
         min-height: 0;
         width: auto; } }
 #main.mainPage {
+  align-content: center;
   display: flex;
   flex: row nowrap;
   justify-content: center;
-  align-content: center;
-  background: url("../images/bandeau.jpeg") no-repeat;
-  vertical-align: middle;
-  height: 15em; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bandeau.jpeg");
+  background-size: cover;
+  min-height: 20em;
+  vertical-align: middle; }
   #main.mainPage div.page {
     color: white;
-    text-align: center;
+    max-width: 40em;
     min-height: 0;
-    max-width: 40em; }
+    text-align: center;
+    font-size: 1.4em; }
 
-#entry, #partners {
-  max-width: 40em;
-  min-height: 15em;
-  padding: 2em; }
+#partners {
+  margin: auto;
+  padding: 2em 0;
+  min-height: 20em;
+  max-width: 40em; }
+  #partners div.include {
+    width: 100%;
+    height: 100%; }
+    #partners div.include ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center; }
+      #partners div.include ul li {
+        list-style-type: none;
+        max-width: 9em;
+        max-height: 9em;
+        height: auto;
+        width: 9em;
+        margin: 0.5em; }
+        #partners div.include ul li figure {
+          width: 100%;
+          height: 100%;
+          margin: 0 !important; }
+          #partners div.include ul li figure a {
+            width: 100%;
+            height: 100%;
+            margin: auto; }
+
+#theme, #formation {
+  background: #dc921b;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 20em;
+  width: 100%;
+  padding: 2em 0; }
+  #theme a, #formation a {
+    text-decoration: none; }
+  #theme a:hover, #formation a:hover {
+    text-decoration: none;
+    animation: FirstAnimation 1s;
+    transform: scale(1.2); }
+  #theme figure, #formation figure {
+    max-width: 30%;
+    min-width: 12em;
+    margin: 0 2em; }
+    #theme figure img, #formation figure img {
+      height: auto;
+      max-width: 20em;
+      max-height: 12em; }
+  #theme figcaption, #formation figcaption {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+    background: transparent;
+    display: inherit;
+    opacity: 1;
+    position: inherit;
+    transition: none;
+    width: auto; }
+
+#formation {
+  background: #4b4869;
+  padding: 2em 15%; }
+
+.cow {
+  color: #4b4869; }
+
+.sheep {
+  color: white; }
+
+.goat {
+  color: #505050; }
+
+.farmer {
+  color: #e2be3a; }
+
+.former {
+  color: #06848b; }
+
+@keyframes FirstAnimation {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.2); } }
 
 /*# sourceMappingURL=anicare.css.map */

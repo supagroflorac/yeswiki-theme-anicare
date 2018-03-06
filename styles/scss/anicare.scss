@@ -33,13 +33,13 @@ header {
   }
 }
 
-
 footer {
   background-color: $mainBlue;
   color: white;
   font-size: 80%;
   font-weight: normal;
   min-height: $textMinHeight;
+  padding: 2em;
 
   a {
     color: white;
@@ -47,10 +47,12 @@ footer {
   a:hover {
     color: white;
   }
+
   ul {
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 
     li {
       list-style: none;
@@ -58,8 +60,6 @@ footer {
     }
   }
 }
-
-
 
 @import 'menu';
 @import 'mainPage';

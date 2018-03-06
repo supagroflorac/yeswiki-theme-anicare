@@ -1,22 +1,140 @@
 #main.mainPage {
+  align-content: center;
   display: flex;
   flex: row nowrap;
   justify-content: center;
-  align-content: center;
 
-  background: url('../images/bandeau.jpeg') no-repeat;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../images/bandeau.jpeg');
+  background-size: cover;
+  min-height: $textMinHeight;
   vertical-align: middle;
-  height: $textMinHeight;
   div.page {
     color: white;
-    text-align: center;
-    min-height: 0;
     max-width: $textWidth;
+    min-height: 0;
+    text-align: center;
+    font-size: 1.4em;
   }
 }
 
-#entry, #partners {
-  max-width: $textWidth;
+#partners {
+  margin: auto;
+  padding: 2em 0;
   min-height: $textMinHeight;
-  padding: 2em;
+  max-width: $textWidth;
+  div.include {
+    width: 100%;
+    height: 100%;
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      li {
+        list-style-type: none;
+        max-width: 9em;
+        max-height: 9em;
+        height: auto;
+        width: 9em;
+        margin: 0.5em;
+        figure {
+          width: 100%;
+          height: 100%;
+          margin: 0 !important;
+          a {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+#theme, #formation {
+  background: $secondOrange;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: $textMinHeight;
+  width: 100%;
+  padding: 2em 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+    animation: FirstAnimation 1s;
+    transform: scale(1.2);
+  }
+
+  figure {
+    max-width: 30%;
+    min-width: 12em;
+    margin: 0 2em;
+    img {
+      height: auto;
+      max-width: $textMinHeight;
+      max-height: 12em;
+    }
+  }
+
+  figcaption {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+
+    // Pour supprimer le thème forcer par attach...
+    background: transparent;
+    display: inherit;
+    opacity: 1;
+    position: inherit;
+    transition: none;
+    width: auto;
+  }
+}
+
+#formation {
+  background: $mainPurple;
+  padding: 2em 15%;
+}
+
+.cow {
+  color: $mainPurple;
+}
+
+.sheep {
+  color: white;
+}
+
+.goat {
+  color: $mainBlack;
+}
+
+.farmer {
+  color: $mainYellow;
+}
+
+.former {
+  color: $mainBlue;
+}
+
+@keyframes FirstAnimation {
+	from {
+		transform: scale(1.0);
+	}
+	to {
+		transform: scale(1.2);
+	}
 }
