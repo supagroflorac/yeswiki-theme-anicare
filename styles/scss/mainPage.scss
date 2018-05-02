@@ -20,6 +20,25 @@
     text-align: center;
     font-size: 1.4em;
   }
+
+  #teaser1 {
+    padding: 2em;
+  }
+}
+
+#teaser {
+  background: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: $textMinHeight;
+  max-width: 640px;
+  margin: auto;
+
+  iframe {
+    height: calc(#{$textMinHeight} - 2em);
+  }
 }
 
 #partners {
