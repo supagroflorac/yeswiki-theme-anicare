@@ -132,16 +132,8 @@
   padding: 2em 15%;
 }
 
-.cow {
-  color: $mainPurple;
-}
-
-.sheep {
+.sheep, .cow, .goat {
   color: white;
-}
-
-.goat {
-  color: $mainBlack;
 }
 
 .farmer {

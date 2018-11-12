@@ -122,6 +122,35 @@
   }
 }
 
+#menu {
+  background: $mainPurple;
+  width: 100%;
+
+  ul {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    list-style-type: none;
+    flex-flow: row;
+    max-width: $textWidth;
+    margin: auto;
+
+  }
+
+  li {
+    padding: 0.5em 1em;
+  }
+
+  img.picto {
+    max-height: 1.5em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
 @media (min-width: 640px) {
   #menuToggle {
     position: inherit;
