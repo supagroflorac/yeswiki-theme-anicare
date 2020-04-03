@@ -81,7 +81,7 @@
   }
 }
 
-#theme, #formation {
+#theme, #formation, #conception {
   background: $secondOrange;
   display: flex;
   flex-flow: row wrap;
@@ -104,7 +104,7 @@
   figure {
     max-width: 30%;
     min-width: 12em;
-    margin: 0 2em;
+    margin: 0 auto;
     img {
       height: auto;
       max-width: $textMinHeight;
@@ -130,6 +130,10 @@
 #formation {
   background: $mainPurple;
   padding: 2em 15%;
+}
+
+#conception {
+  background: $mainBlue;
 }
 
 .sheep, .cow, .goat {
