@@ -19,6 +19,16 @@ header {
   background-color: $mainBlue;
   min-height: $textMinHeight;
 
+  ul.flaglist {
+    list-style-type: none;
+    flex-flow: row;
+    display: flex;
+
+    li {
+      margin: .2em;
+    }
+  }
+
   #logo {
     height: 100%;
     width: auto;

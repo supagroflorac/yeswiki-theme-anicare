@@ -28,6 +28,8 @@ figure.anicare_subthemes figcaption { opacity: 1; }
 body { min-height: 100vh; }
 
 header { display: flex; flex-flow: row; justify-content: space-between; background-color: #06848b; min-height: 50vh; }
+header ul.flaglist { list-style-type: none; flex-flow: row; display: flex; }
+header ul.flaglist li { margin: .2em; }
 header #logo { height: 100%; width: auto; }
 
 #main { width: 100%; }
