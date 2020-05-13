@@ -85,14 +85,15 @@
   background: $secondOrange;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   min-height: $textMinHeight;
   width: 100%;
-  padding: 2em 0;
+  padding: 0;
 
   a {
     text-decoration: none;
+    margin: 2em 3em 0;
   }
 
   a:hover {
@@ -129,7 +130,6 @@
 
 #formation {
   background: $mainPurple;
-  padding: 2em 15%;
 }
 
 #conception {

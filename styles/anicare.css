@@ -27,7 +27,7 @@ figure.anicare_subthemes figcaption { opacity: 1; }
 
 body { min-height: 100vh; }
 
-header { display: flex; flex-flow: row; justify-content: space-between; background-color: #06848b; min-height: 50vh; }
+header { display: flex; flex-flow: row; justify-content: space-between; background-color: #06848b; min-height: 18em; }
 header ul.flaglist { list-style-type: none; flex-flow: row; display: flex; }
 header ul.flaglist li { margin: .2em; }
 header #logo { height: 100%; width: auto; }
@@ -35,7 +35,7 @@ header #logo { height: 100%; width: auto; }
 #main { width: 100%; }
 #main div.page { max-width: 40em; margin: auto; padding: 2em; }
 
-footer { background-color: #06848b; color: white; font-size: 80%; font-weight: normal; min-height: 50vh; padding: 2em; }
+footer { background-color: #06848b; color: white; font-size: 80%; font-weight: normal; min-height: 18em; padding: 2em; }
 footer a, footer a:hover, footer a:visited { color: white; }
 footer ul { display: flex; flex-flow: row; justify-content: center; align-items: center; }
 footer ul li { list-style: none; margin-right: 1em; }
@@ -56,9 +56,9 @@ footer ul li { list-style: none; margin-right: 1em; }
 #menuToggle div.include ul a:hover { color: #06848b; background: white; }
 
 #menu { background: #4b4869; width: 100%; }
-#menu ul { align-items: center; justify-content: space-around; display: flex; list-style-type: none; flex-flow: row; max-width: 40em; margin: auto; }
+#menu ul { align-items: center; justify-content: space-around; display: flex; list-style-type: none; flex-flow: row; flex-wrap: wrap; max-width: 40em; margin: auto; }
 #menu li { padding: 0.5em 1em; }
-#menu img.picto { max-height: 1.5em; }
+#menu img.picto { max-height: 3em; }
 #menu a { text-decoration: none; color: white; }
 
 @media (min-width: 640px) { #menuToggle { position: inherit; }
@@ -66,28 +66,28 @@ footer ul li { list-style: none; margin-right: 1em; }
   #menuToggle input { display: none; }
   #menuToggle div.include { position: relative; }
   #menuToggle div.include ul { display: flex; flex-flow: row; margin: 0; padding: 1em; min-height: 0; width: auto; } }
-#main.mainPage { align-content: center; display: flex; flex: row nowrap; justify-content: center; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bandeau.jpeg"); background-size: cover; min-height: 50vh; vertical-align: middle; }
+#main.mainPage { align-content: center; display: flex; flex: row nowrap; justify-content: center; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bandeau.jpeg"); background-size: cover; min-height: 18em; vertical-align: middle; }
 #main.mainPage div.page { color: white; max-width: 40em; min-height: 0; text-align: center; font-size: 1.4em; }
 #main.mainPage #teaser1 { padding: 2em; }
 
-#teaser { background: white; display: flex; flex-flow: row wrap; justify-content: space-around; align-items: center; min-height: 50vh; max-width: 640px; margin: auto; }
-#teaser iframe { height: calc(50vh - 2em); }
+#teaser { background: white; display: flex; flex-flow: row wrap; justify-content: space-around; align-items: center; min-height: 18em; max-width: 640px; margin: auto; }
+#teaser iframe { height: calc(18em - 2em); }
 
-#partners { margin: auto; padding: 2em 0; min-height: 50vh; max-width: 71em; }
+#partners { margin: auto; padding: 2em 0; min-height: 18em; max-width: 71em; }
 #partners div.include { width: 100%; height: 100%; }
 #partners div.include ul { width: 100%; height: 100%; display: flex; flex-flow: row wrap; align-items: center; justify-content: center; }
 #partners div.include ul li { list-style-type: none; max-width: 9em; max-height: 9em; height: auto; width: 9em; margin: 0.5em; }
 #partners div.include ul li figure { width: 100%; height: 100%; margin: 0 !important; }
 #partners div.include ul li figure a { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; margin: auto; }
 
-#theme, #formation, #conception { background: #dc921b; display: flex; flex-flow: row wrap; justify-content: space-around; align-items: center; min-height: 50vh; width: 100%; padding: 2em 0; }
-#theme a, #formation a, #conception a { text-decoration: none; }
+#theme, #formation, #conception { background: #dc921b; display: flex; flex-flow: row wrap; justify-content: center; align-items: center; min-height: 18em; width: 100%; padding: 0; }
+#theme a, #formation a, #conception a { text-decoration: none; margin: 2em 3em 0; }
 #theme a:hover, #formation a:hover, #conception a:hover { text-decoration: none; animation: FirstAnimation 1s; transform: scale(1.2); }
 #theme figure, #formation figure, #conception figure { max-width: 30%; min-width: 12em; margin: 0 auto; }
-#theme figure img, #formation figure img, #conception figure img { height: auto; max-width: 50vh; max-height: 12em; }
+#theme figure img, #formation figure img, #conception figure img { height: auto; max-width: 18em; max-height: 12em; }
 #theme figcaption, #formation figcaption, #conception figcaption { font-size: 1.5em; margin: auto; text-align: center; background: transparent; display: inherit; opacity: 1; position: inherit; transition: none; width: auto; }
 
-#formation { background: #4b4869; padding: 2em 15%; }
+#formation { background: #4b4869; }
 
 #conception { background: #06848b; }
 
