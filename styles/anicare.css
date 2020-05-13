@@ -21,6 +21,8 @@ a:visited { color: #008db2; }
 
 figure.anicare_subthemes figcaption { opacity: 1; }
 
+.anicare_video_title { background-color: #008db2; color: white; font-size: 0.8em; margin: 0; padding: .5em; overflow: hidden; word-wrap: unset; }
+
 * { box-sizing: border-box; padding: 0; margin: 0; }
 
 body { min-height: 100vh; }
@@ -88,11 +90,7 @@ footer ul li { list-style: none; margin-right: 1em; }
 
 #conception { background: #06848b; }
 
-.sheep, .cow, .goat { color: white; }
-
-.farmer { color: #e2be3a; }
-
-.former { color: #06848b; }
+.sheep, .cow, .goat, .farmer, .former { color: white; }
 
 @keyframes FirstAnimation { from { transform: scale(1); }
   to { transform: scale(1.2); } }

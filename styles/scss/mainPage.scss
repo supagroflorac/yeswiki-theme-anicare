@@ -136,16 +136,8 @@
   background: $mainBlue;
 }
 
-.sheep, .cow, .goat {
+.sheep, .cow, .goat, .farmer, .former {
   color: white;
-}
-
-.farmer {
-  color: $mainYellow;
-}
-
-.former {
-  color: $mainBlue;
 }
 
 @keyframes FirstAnimation {
