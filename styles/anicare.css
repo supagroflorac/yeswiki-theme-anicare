@@ -36,8 +36,7 @@ header #logo { height: 100%; width: auto; }
 #main div.page { max-width: 40em; margin: auto; padding: 2em; }
 
 footer { background-color: #06848b; color: white; font-size: 80%; font-weight: normal; min-height: 50vh; padding: 2em; }
-footer a { color: white; }
-footer a:hover { color: white; }
+footer a, footer a:hover, footer a:visited { color: white; }
 footer ul { display: flex; flex-flow: row; justify-content: center; align-items: center; }
 footer ul li { list-style: none; margin-right: 1em; }
 

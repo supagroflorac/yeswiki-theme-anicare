@@ -52,10 +52,7 @@ footer {
   min-height: $textMinHeight;
   padding: 2em;
 
-  a {
-    color: white;
-  }
-  a:hover {
+  a, a:hover, a:visited {
     color: white;
   }
 
