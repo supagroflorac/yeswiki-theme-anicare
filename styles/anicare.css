@@ -21,7 +21,9 @@ a:visited { color: #008db2; }
 
 figure.anicare_subthemes figcaption { opacity: 1; }
 
-.anicare_video_title { background-color: #008db2; color: white; font-size: 0.8em; margin: 0; padding: .5em; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.anicare_video_title { background-color: #008db2; display: flex; flex-flow: nowrap; justify-content: space-between; align-items: center; margin-bottom: 1em; }
+.anicare_video_title h2 { color: white; font-size: 0.8em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: .5em; margin: 0; }
+.anicare_video_title a { color: white; margin-left: 0; padding: .5em .5em 0; }
 
 * { box-sizing: border-box; padding: 0; margin: 0; }
 
