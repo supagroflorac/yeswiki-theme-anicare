@@ -4,6 +4,7 @@ $translations = array(
     'Dairy cows' => 'Dairy cows',
     'Meat sheep' => 'Meat sheep',
     'Dairy goats' => 'Dairy goats',
+    'Meat reindeers' => 'Meat reindeers',
     'Farmer' => 'Farmer',
     'Trainer' => 'Trainer',
     'Home' => 'Home',
