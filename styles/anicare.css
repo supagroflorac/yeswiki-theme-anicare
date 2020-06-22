@@ -311,7 +311,8 @@ footer {
   padding: 0; }
   #theme a, #formation a, #conception a {
     text-decoration: none;
-    margin: 2em 3em 0; }
+    margin: 2em 3em 0;
+    max-width: 240px; }
   #theme a:hover, #formation a:hover, #conception a:hover {
     text-decoration: none;
     animation: FirstAnimation 1s;
@@ -341,7 +342,7 @@ footer {
 #conception {
   background: #06848b; }
 
-.sheep, .cow, .goat, .farmer, .former {
+.sheep, .cow, .goat, .farmer, .former, .conception, .reindeer {
   color: white; }
 
 @keyframes FirstAnimation {

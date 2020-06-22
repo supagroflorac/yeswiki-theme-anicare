@@ -94,6 +94,7 @@
   a {
     text-decoration: none;
     margin: 2em 3em 0;
+    max-width: 240px;
   }
 
   a:hover {
@@ -136,7 +137,7 @@
   background: $mainBlue;
 }
 
-.sheep, .cow, .goat, .farmer, .former {
+.sheep, .cow, .goat, .farmer, .former, .conception, .reindeer {
   color: white;
 }
 
