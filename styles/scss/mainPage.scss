@@ -38,6 +38,7 @@
 
   iframe {
     height: calc(#{$textMinHeight} - 2em);
+    border: 1px solid #EEE;
   }
 }
 

@@ -264,7 +264,8 @@ footer {
   max-width: 640px;
   margin: auto; }
   #teaser iframe {
-    height: calc(18em - 2em); }
+    height: calc(18em - 2em);
+    border: 1px solid #EEE; }
 
 #partners {
   margin: auto;
