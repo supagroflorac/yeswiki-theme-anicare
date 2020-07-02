@@ -1,12 +1,8 @@
 <?php
 
 include_once('tools/multilang/includes/multilang.func.php');
-$defaultLang = getDefaultLang();
+//$defaultLang = getDefaultLang();
 $lang = getLang();
-
-if (count($fiches) > 0) {
-    print("<div class=\"row-fluid row\">\n");
-}
 
 // l'icone d'edition au format SVG.
 $editIcon = '<svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -14,10 +10,9 @@ $editIcon = '<svg class="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 
 <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 00.5.5H4v.5a.5.5 0 00.5.5H5v.5a.5.5 0 00.5.5H6v-1.5a.5.5 0 00-.5-.5H5v-.5a.5.5 0 00-.5-.5H3z" clip-rule="evenodd"/>
 </svg>';
 
-foreach($fiches as $fiche) {
-
-    $id = $fiche['bf_titre'];
-    $title = $fiche['title_en'];
+function print_video(array $video, string $lang, string $editIcon) {
+    $id = $video['bf_titre'];
+    $title = $video['title_en'];
     $editLink = "";
     $description = "";
 
@@ -25,12 +20,12 @@ foreach($fiches as $fiche) {
          $editLink = " <a href=\"?${id}/edit\" class=\"anicare_video_edit\">${editIcon}</a>";
     }
 
-    if ($fiche["title_${lang}"] !== '') {
-        $title = $fiche["title_${lang}"];
+    if ($video["title_${lang}"] !== '') {
+        $title = $video["title_${lang}"];
     }
 
-    if ($fiche["description_${lang}"] !== '') {
-        $description = "<p class=\"anicare_video_description\">" . $fiche["description_${lang}"] . "</p>";
+    if ($video["description_${lang}"] !== '') {
+        $description = "<p class=\"anicare_video_description\">" . $video["description_${lang}"] . "</p>";
     }
 
     print("
@@ -45,6 +40,29 @@ foreach($fiches as $fiche) {
             ${description}
         </article>
     ");
+}
+
+if (count($fiches) > 0) {
+    print("<div class=\"row-fluid row\">\n");
+}
+
+$farmer_videos = array();
+$expert_videos = array();
+
+foreach($fiches as $video) {
+    if ($video['listeListeVideoexpert'] === 2) {
+        $expert_videos[] = $video;
+        continue;
+    }
+    $farmer_videos[] = $video;
+}
+
+foreach($farmer_videos as $video) {
+    print_video($video, $lang, $editIcon);
+}
+
+foreach($expert_videos as $video) {
+    print_video($video, $lang, $editIcon);
 }
 
 if (count($fiches) > 0) {
